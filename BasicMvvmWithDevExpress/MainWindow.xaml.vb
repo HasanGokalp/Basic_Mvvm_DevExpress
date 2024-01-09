@@ -8,5 +8,6 @@ Partial Public Class MainWindow
     Inherits ThemedWindow
     Public Sub New()
         InitializeComponent()
+        WindowStartupLocation = WindowStartupLocation.CenterScreen
     End Sub
 End Class
