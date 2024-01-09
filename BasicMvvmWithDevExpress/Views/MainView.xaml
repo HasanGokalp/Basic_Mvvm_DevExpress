@@ -20,6 +20,14 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </ListBox.RenderTransform>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Id}" FontWeight="Bold" Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Name}" Margin="0,0,5,0"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <Button Name="button" Content="Tıkla" Command="{Binding GetAllCommand}" HorizontalAlignment="Left" Margin="234,200,0,0" VerticalAlignment="Top" Height="21" Width="56"/>
 
